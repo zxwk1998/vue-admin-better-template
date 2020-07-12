@@ -1,0 +1,31 @@
+## 本项目地址
+
+#### - [基础版本 演示地址 vue-admin-beautiful ](http://beautiful.panm.cn/vue-admin-beautiful-template)
+#### - [集成版本 演示地址 vue-admin-beautiful ](http://beautiful.panm.cn/vue-admin-beautiful)
+#### - [clever 版本 演示地址 vue-admin-beautiful ](http://beautiful.panm.cn/vue-admin-clever)
+
+#### - [开源地址，感谢 star](https://github.com/chuzhixin/vue-admin-beautiful)
+
+#### 学习讨论 QQ 群：972435319 群内提供基础版、集成版、clever 版本、详细文档与视频教程
+
+#### 学习辅导、加入 VIP 群、购买自定义版权版本 联系 QQ 1204505056
+
+## 运行步骤，严格按步骤来
+
+```bash
+
+# 进入项目目录
+cd vue-element-admin-beautiful
+# 安装依赖，一定要cnpm i，别听网上乱七八糟的回答，本项目始终基于最新的package版本，cnpm不会出现任何问题，置于怎么安装cnpm自行百度
+cnpm i
+# 本地开发 启动项目
+cnpm run serve
+```
+
+## 友情链接
+
+#### - [uView 文档（超棒的移动跨端框架，文档详细，上手容易）](https://uviewui.com/)
+
+#### - [uView 开源地址（uView UI，是 uni-app 生态优秀的 UI 框架，全面的组件和便捷的工具会让您信手拈来，如鱼得水）](https://github.com/YanxinNet/uView)
+
+### <font color="red">已付费置顶 烦请小号刷差评的放过 我也需要养家糊口 也祝您财运亨通 好不好用请看演示地址 保留版权信息可免费商用（页面所有版权信息不付费也可完全删除） 完全自定义版权版本 299 元 VIP 群内提供详细的视频与文档教程，由于置顶费用较高，如有需要在本页加广告的朋友可以联系我</font>
