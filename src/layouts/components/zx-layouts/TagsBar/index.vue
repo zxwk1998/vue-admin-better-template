@@ -23,10 +23,10 @@
         <i class="el-icon-arrow-down el-icon--right"></i>
       </span>
       <el-dropdown-menu slot="dropdown" class="tags-more">
-        <el-dropdown-item command="refreshRoute">
+        <!-- <el-dropdown-item command="refreshRoute">
           <vab-icon :icon="['fas', 'circle-notch']" />
           刷新
-        </el-dropdown-item>
+        </el-dropdown-item> -->
         <el-dropdown-item command="closeOthersTags">
           <vab-icon :icon="['fas', 'times-circle']" />
           关闭其他
@@ -236,16 +236,16 @@ export default {
 .tags-bar-container {
   position: relative;
   box-sizing: border-box;
-  height: $base-tags-bar-height;
-  user-select: none;
-  background: $base-color-white;
-  border-top: 1px solid #f6f6f6;
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: space-between;
-  padding-left: $base-padding;
+  height: $base-tags-bar-height;
   padding-right: $base-padding;
+  padding-left: $base-padding;
+  user-select: none;
+  background: $base-color-white;
+  border-top: 1px solid #f6f6f6;
 
   .tags-content {
     width: calc(100% - 90px);
@@ -266,37 +266,38 @@ export default {
         }
 
         .el-tabs__item {
+          box-sizing: border-box;
           height: $base-tag-item-height;
+          margin-right: 5px;
           line-height: $base-tag-item-height;
           border: 1px solid $base-border-color;
-          margin-right: 5px;
           border-radius: $base-border-radius;
-          box-sizing: border-box;
 
           &.is-active {
-            background: $base-color-blue;
             color: $base-color-white;
+            background: $base-color-blue;
             border: 1px solid $base-color-blue;
           }
 
           .el-icon-close {
             position: relative;
-            font-size: 12px;
-            width: 0;
-            height: 14px;
-            vertical-align: middle;
-            line-height: 14px;
-            overflow: hidden;
             top: -1px;
             right: -2px;
+            width: 0;
+            height: 14px;
+            overflow: hidden;
+            font-size: 12px;
+            line-height: 14px;
+            vertical-align: middle;
             transform-origin: 100% 50%;
           }
-          /*&:nth-child(2) {
+
+          /* &:nth-child(2) {
             padding: 0 20px;
             &:hover {
               padding: 0 13px;
             }
-          }*/
+          } */
         }
       }
     }

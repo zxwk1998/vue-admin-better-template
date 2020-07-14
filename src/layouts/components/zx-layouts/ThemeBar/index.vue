@@ -14,10 +14,6 @@
         <vab-icon :icon="['fas', 'laptop-code']"></vab-icon>
         <p>拷贝代码</p>
       </div>
-      <!--<div @click="handleChangeQq">
-        <vab-remix-icon icon-class="qq-fill" />
-        <p>学习交流</p>
-      </div>-->
     </div>
 
     <el-drawer
@@ -51,6 +47,7 @@
             <el-form-item label="菜单背景色">
               <el-color-picker
                 v-model="theme.menuBackground"
+                popper-class="vab-color-picker"
                 :predefine="[
                   '#2a58ad',
                   '#001529',
@@ -66,6 +63,7 @@
             <el-form-item label="菜单选中色">
               <el-color-picker
                 v-model="theme.menuBackgroundActive"
+                popper-class="vab-color-picker"
                 :predefine="['#22468a', '#1890ff', '#21e6af', '#f57e6c']"
                 show-alpha
               ></el-color-picker>
@@ -73,6 +71,7 @@
             <el-form-item label="菜单文字色">
               <el-color-picker
                 v-model="theme.menuColor"
+                popper-class="vab-color-picker"
                 :predefine="['#000', '#fff']"
                 show-alpha
               ></el-color-picker>
@@ -80,6 +79,7 @@
             <el-form-item label="标签主题色">
               <el-color-picker
                 v-model="theme.tagBackgroundActive"
+                popper-class="vab-color-picker"
                 :predefine="['#1890ff', '#0fd59d', '#f56c6c']"
                 show-alpha
               ></el-color-picker>
@@ -87,6 +87,7 @@
             <el-form-item label="默认按钮主题色">
               <el-color-picker
                 v-model="theme.buttonBackground"
+                popper-class="vab-color-picker"
                 :predefine="['#1890ff', '#0fd59d', '#f56c6c']"
                 show-alpha
               ></el-color-picker>
@@ -94,15 +95,16 @@
             <el-form-item label="分页选中色">
               <el-color-picker
                 v-model="theme.paginationBackgroundActive"
+                popper-class="vab-color-picker"
                 :predefine="['#1890ff', '#0fd59d', '#f56c6c']"
                 show-alpha
               ></el-color-picker>
             </el-form-item>
             <el-form-item>
               <el-button @click="handleSetDfaultTheme">恢复默认</el-button>
-              <el-button type="primary" @click="handleSaveTheme"
-                >保存</el-button
-              >
+              <el-button type="primary" @click="handleSaveTheme">
+                保存
+              </el-button>
             </el-form-item>
           </el-form>
         </div></el-scrollbar
@@ -114,7 +116,7 @@
 <script>
 import variables from "@/styles/variables.scss";
 import { mapGetters } from "vuex";
-
+import { layout as defaultLayout } from "@/config/settings";
 export default {
   name: "ThemeBar",
   data() {
@@ -146,42 +148,21 @@ export default {
     this.$baseEventBus.$on("theme", () => {
       this.handleChangeTheme();
     });
-    const theme = localStorage.getItem("BYUI-VUE-THEME");
+    const theme = localStorage.getItem("vue-admin-beautiful-theme");
+    if (null !== theme) {
+      this.theme = JSON.parse(theme);
+      this.handleSetTheme();
+    }
     this.theme.layout = this.layout;
     this.theme.header = this.header;
     this.theme.tagsBar = this.tagsBar;
-    if (null !== theme) {
-      this.$set(this.theme, "menuBackground", JSON.parse(theme).menuBackground);
-      this.$set(
-        this.theme,
-        "menuBackgroundActive",
-        JSON.parse(theme).menuBackgroundActive
-      );
-      this.$set(this.theme, "menuColor", JSON.parse(theme).menuColor);
-      this.$set(
-        this.theme,
-        "tagBackgroundActive",
-        JSON.parse(theme).tagBackgroundActive
-      );
-      this.$set(
-        this.theme,
-        "buttonBackground",
-        JSON.parse(theme).buttonBackground
-      );
-      this.$set(
-        this.theme,
-        "paginationBackgroundActive",
-        JSON.parse(theme).paginationBackgroundActive
-      );
-      this.handleSetTheme();
-    }
   },
   methods: {
+    handleIsMobile() {
+      return document.body.getBoundingClientRect().width - 1 < 992;
+    },
     handleChangeTheme() {
       this.drawerVisible = true;
-    },
-    handleChangeQq() {
-      window.open("tencent://message/?uin=1204505056");
     },
     handleSetTheme() {
       let {
@@ -197,7 +178,6 @@ export default {
       } = this.theme;
 
       let style = document.createElement("style");
-      style.id = "BYUI-VUE-THEME";
       style.innerHTML = `
         .top-bar-container,
         .top-bar-container .vab-main,
@@ -249,7 +229,7 @@ export default {
       `;
       document.getElementsByTagName("head").item(0).appendChild(style);
       localStorage.setItem(
-        "BYUI-VUE-THEME",
+        "vue-admin-beautiful-theme",
         `{
             "menuBackground":"${menuBackground}",
             "menuBackgroundActive":"${menuBackgroundActive}",
@@ -262,31 +242,25 @@ export default {
             "paginationBackgroundActive":"${paginationBackgroundActive}"
           }`
       );
-      this.handleSwitchLayout(layout);
-      this.handleSwitchHeader(header);
-      this.handleSwitchTagsBar(tagsBar);
+      if (!this.handleIsMobile()) {
+        this.$store.dispatch("settings/changeLayout", layout);
+      }
+      this.$store.dispatch("settings/changeHeader", header);
+      this.$store.dispatch("settings/changeTagsBar", tagsBar);
       this.drawerVisible = false;
     },
     handleSaveTheme() {
       this.handleSetTheme();
-      location.reload();
     },
     handleSetDfaultTheme() {
-      localStorage.removeItem("BYUI-VUE-THEME");
-      this.$store.dispatch("settings/changeLayout", this.theme.layout);
+      localStorage.removeItem("vue-admin-beautiful-theme");
       this.$refs["form"].resetFields();
       Object.assign(this.$data, this.$options.data());
+      this.$store.dispatch("settings/changeLayout", defaultLayout);
+      this.theme.layout = this.layout;
+      this.theme.header = this.header;
+      this.theme.tagsBar = this.tagsBar;
       this.drawerVisible = false;
-      location.reload();
-    },
-    handleSwitchLayout(layout) {
-      this.$store.dispatch("settings/changeLayout", layout);
-    },
-    handleSwitchHeader(header) {
-      this.$store.dispatch("settings/changeHeader", header);
-    },
-    handleSwitchTagsBar(tagsBar) {
-      this.$store.dispatch("settings/changeTagsBar", tagsBar);
     },
     handleGetCode() {
       const url =
@@ -342,13 +316,19 @@ export default {
 
   > div {
     padding-top: 10px;
-    border-bottom: 1px solid $base-color-white;
+    border-bottom: 0 !important;
 
     &:hover {
       opacity: 0.9;
     }
 
+    & + div {
+      border-top: 1px solid $base-color-white;
+    }
+
     p {
+      padding: 0;
+      margin: 0;
       font-size: $base-font-size-small;
       line-height: 30px;
       color: $base-color-white;
@@ -359,7 +339,7 @@ export default {
 .theme-bar-setting {
   @include right-bar;
 
-  top: 40vh;
+  top: calc((100vh - 110px) / 2);
 
   ::v-deep {
     svg:not(:root).svg-inline--fa {
@@ -382,5 +362,12 @@ export default {
 
 .el-drawer__body {
   padding: 20px;
+}
+</style>
+<style lang="scss">
+.vab-color-picker {
+  .el-color-dropdown__link-btn {
+    display: none;
+  }
 }
 </style>
