@@ -54,7 +54,7 @@
     "vue": "^2.6.11",
     "vue-router": "^3.3.4",
     "vuex": "^3.5.1",
-    "zx-icon": "^1.1.6",
+    "zx-icon": "^1.1.8",
     "zx-keel": "^0.9.4",
     "zx-templates": "^0.0.10",
     "zx-layouts": "^0.6.0"
