@@ -4,7 +4,7 @@
       <!--<el-avatar class="user-avatar" :src="avatar"></el-avatar>-->
       <img class="user-avatar" :src="avatar" alt="" />
       <div class="user-name">
-        {{ userName }}<i class="el-icon-arrow-down el-icon--right"></i>
+        {{ username }}<i class="el-icon-arrow-down el-icon--right"></i>
       </div>
     </span>
 
@@ -30,7 +30,7 @@ export default {
   computed: {
     ...mapGetters({
       avatar: "user/avatar",
-      userName: "user/userName",
+      username: "user/username",
     }),
   },
   methods: {
@@ -67,24 +67,24 @@ export default {
 </script>
 <style lang="scss" scoped>
 .avatar-dropdown {
-  padding: 0;
-  height: 50px;
   display: flex;
-  align-items: center;
   align-content: center;
-  justify-items: center;
+  align-items: center;
   justify-content: center;
+  justify-items: center;
+  height: 50px;
+  padding: 0;
 
   .user-avatar {
-    cursor: pointer;
     width: 40px;
     height: 40px;
+    cursor: pointer;
     border-radius: 50%;
   }
 
   .user-name {
-    margin-left: 5px;
     position: relative;
+    margin-left: 5px;
     margin-left: 5px;
     font-weight: 600;
     cursor: pointer;
