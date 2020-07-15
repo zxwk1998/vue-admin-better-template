@@ -57,10 +57,10 @@
     "zx-icon": "^1.1.8",
     "zx-keel": "^0.9.4",
     "zx-templates": "^0.0.10",
-    "zx-layouts": "^0.6.0"
+    "zx-layouts": "^0.6.2"
   },
   "devDependencies": {
-    "@babel/register": "^7.10.4",
+    "@babel/register": "^7.10.5",
     "@vue/cli-plugin-babel": "^4.4.6",
     "@vue/cli-plugin-eslint": "^4.4.6",
     "@vue/cli-plugin-router": "^4.4.6",
