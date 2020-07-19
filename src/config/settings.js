@@ -17,7 +17,7 @@ module.exports = {
   baseURL:
     process.env.NODE_ENV === "development" || process.env.NODE_ENV === "preview"
       ? "vab-mock-server"
-      : "http://your.website.com",
+      : "vab-mock-server",
   //标题 （包括初次加载雪花屏的标题 页面的标题 浏览器的标题）
   title: "vue-admin-beautiful",
   //简写
@@ -47,7 +47,7 @@ module.exports = {
   //token在localStorage、sessionStorage、cookie存储的key的名称
   tokenTableName: "vue-admin-beautiful",
   //token存储位置localStorage sessionStorage cookie
-  storage: "localStorage",
+  storage: "sessionStorage",
   //token失效回退到登录页时是否记录本次的路由
   recordRoute: true,
   //是否显示logo，不显示时设置false，显示时请填写remixIcon图标名称，暂时只支持设置remixIcon
@@ -96,4 +96,6 @@ module.exports = {
   build7z: false,
   //代码生成机生成在view下的文件夹名称
   templateFolder: "project",
+  //是否显示终端donation打印
+  donation: true,
 };
