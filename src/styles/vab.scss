@@ -8,7 +8,9 @@
 @import "./normalize.scss";
 @import "./transition.scss";
 @import "./loading.scss";
-
+@import "./themes/ocean.scss";
+@import "./themes/green.scss";
+@import "./themes/glory.scss";
 $base: ".vab";
 
 @mixin scrollbar {
