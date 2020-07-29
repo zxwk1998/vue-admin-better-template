@@ -42,7 +42,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
-    "dayjs": "^1.8.30",
+    "dayjs": "^1.8.31",
     "element-ui": "^2.13.2",
     "js-cookie": "^2.2.1",
     "jsencrypt": "^3.0.0-rc.1",
@@ -56,7 +56,7 @@
     "zx-icon": "^1.1.8",
     "zx-keel": "^0.9.4",
     "zx-templates": "^0.0.11",
-    "zx-layouts": "^0.6.9"
+    "zx-layouts": "^0.6.10"
   },
   "devDependencies": {
     "@babel/register": "^7.10.5",
