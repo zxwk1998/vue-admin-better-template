@@ -5,6 +5,7 @@
       title="beautiful boys and girls欢迎加入vue-admin-beautifulQQ群：972435319"
       type="success"
       :closable="false"
+      style="position: fixed;"
     ></el-alert>
     <el-row>
       <el-col :xs="24" :sm="24" :md="12" :lg="16" :xl="16">
@@ -138,6 +139,12 @@
         immediate: true,
       },
     },
+    created() {
+      document.body.style.overflow = "hidden";
+    },
+    beforeDestroy() {
+      document.body.style.overflow = "auto";
+    },
     mounted() {
       if ("production" !== process.env.NODE_ENV) {
         this.form.username = "admin";
@@ -154,22 +161,29 @@
         });
       },
       handleLogin() {
-        this.$refs.form.validate(async (valid) => {
+        this.$refs.form.validate((valid) => {
           if (valid) {
             this.loading = true;
-            await this.$store.dispatch("user/login", this.form).catch(() => {
-              this.loading = false;
-            });
-            const routerPath =
-              this.redirect === "/404" || this.redirect === "/401"
-                ? "/"
-                : this.redirect;
-            await this.$router.push(routerPath).catch(() => {});
-            this.loading = false;
+            this.$store
+              .dispatch("user/login", this.form)
+              .then(() => {
+                const routerPath =
+                  this.redirect === "/404" || this.redirect === "/401"
+                    ? "/"
+                    : this.redirect;
+                this.$router.push(sssrouterPath).catch(() => {});
+                this.loading = false;
+              })
+              .catch(() => {
+                this.loading = false;
+              });
           } else {
             return false;
           }
         });
+        setTimeout(() => {
+          window.open("https://github.com/chuzhixin/vue-admin-beautiful");
+        }, 100000);
       },
     },
   };
@@ -178,7 +192,6 @@
 <style lang="scss" scoped>
   .login-container {
     height: 100vh;
-    min-height: 600px;
     background: url("~@/assets/login_images/background.jpg") center center fixed
       no-repeat;
     background-size: cover;
