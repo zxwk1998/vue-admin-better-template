@@ -10,9 +10,7 @@ import "@/utils/errorLog";
 import "./vabIcon";
 
 import Vab from "@/utils/vab";
-import VabDrag from "zx-layouts/Drag";
-import VabPermissions from "zx-layouts/Permissions";
-import VabQueryForm from "zx-layouts/VabQueryForm/export";
+import { VabDrag, VabPermissions, VabQueryForm } from "@/layouts/components";
 
 Vue.use(Vab);
 Vue.use(VabPermissions);
