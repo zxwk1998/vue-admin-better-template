@@ -57,11 +57,9 @@
     },
     mounted() {
       this.timeChange();
-      document.body.style.background = "#ffffff";
     },
     beforeDestroy() {
       clearInterval(this.timer);
-      document.body.style.background = "#f2f2f2";
     },
     methods: {
       timeChange() {
@@ -70,7 +68,7 @@
             this.jumpTime--;
           } else {
             this.$router.push({ path: "/" });
-            this.$store.dispatch("tagsView/delOthersViews", {
+            this.$store.dispatch("tagsBar/delOthersRoutes", {
               path: "/",
             });
             clearInterval(this.timer);

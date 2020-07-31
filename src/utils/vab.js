@@ -17,7 +17,7 @@ const install = (Vue, opts = {}) => {
     return title;
   })();
   /* 全局加载层 */
-  Vue.prototype.$baseLoading = (index, text, callback) => {
+  Vue.prototype.$baseLoading = (index, text) => {
     let loading;
     if (!index) {
       loading = Loading.service({
@@ -33,16 +33,10 @@ const install = (Vue, opts = {}) => {
         background: "hsla(0,0%,100%,.8)",
       });
     }
-    if (callback) {
-      callback(loading);
-    } else {
-      setTimeout(() => {
-        loading.close();
-      }, messageDuration);
-    }
+    return loading;
   };
   /* 全局多彩加载层 */
-  Vue.prototype.$baseColorfullLoading = (index, text, callback) => {
+  Vue.prototype.$baseColorfullLoading = (index, text) => {
     let loading;
     if (!index) {
       loading = Loading.service({
@@ -73,13 +67,7 @@ const install = (Vue, opts = {}) => {
         background: "hsla(0,0%,100%,.8)",
       });
     }
-    if (callback) {
-      callback(loading);
-    } else {
-      setTimeout(() => {
-        loading.close();
-      }, messageDuration);
-    }
+    return loading;
   };
   /* 全局Message */
   Vue.prototype.$baseMessage = (message, type) => {
@@ -154,30 +142,6 @@ const install = (Vue, opts = {}) => {
     }
     return height;
   };
-
-  /* 全局map图层 */
-  // Vue.prototype.$baseMap = () => {
-  //   return new maptalks.Map("map", {
-  //     center: [116.41348403785, 39.910843952376],
-  //     zoom: 12,
-  //     minZoom: 1,
-  //     maxZoom: 19,
-  //     spatialReference: {
-  //       projection: "baidu",
-  //     },
-  //     attribution: {
-  //       content: "&copy; vue-admin-beautiful",
-  //     },
-  //     baseLayer: new maptalks.TileLayer("base", {
-  //       cssFilter: "sepia(100%) invert(90%)",
-  //       urlTemplate:
-  //         "http://online{s}.map.bdimg.com/onlinelabel/?qt=tile&x={x}&y={y}&z={z}&styles=pl&scaler=1&p=1",
-  //       subdomains: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-  //       attribution:
-  //         '&copy; <a target="_blank" href="http://map.baidu.com">Baidu</a>',
-  //     }),
-  //   });
-  // };
 
   /* 全局lodash */
   Vue.prototype.$baseLodash = lodash;

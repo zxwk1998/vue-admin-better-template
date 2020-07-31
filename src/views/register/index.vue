@@ -5,6 +5,7 @@
       title="beautiful boys and girls欢迎加入vue-admin-beautifulQQ群：972435319"
       type="success"
       :closable="false"
+      style="position: fixed;"
     ></el-alert>
     <el-row>
       <el-col :xs="24" :sm="24" :md="12" :lg="16" :xl="16">
@@ -153,9 +154,11 @@
         passwordType: "password",
       };
     },
-    created() {},
-    mounted() {},
+    created() {
+      document.body.style.overflow = "hidden";
+    },
     beforeDestroy() {
+      document.body.style.overflow = "auto";
       this.getPhoneIntval = null;
       clearInterval(this.getPhoneIntval);
     },
@@ -195,7 +198,6 @@
 <style lang="scss" scoped>
   .register-container {
     height: 100vh;
-    min-height: 780px;
     background: url("~@/assets/login_images/background.jpg") center center fixed
       no-repeat;
     background-size: cover;

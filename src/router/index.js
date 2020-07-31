@@ -7,7 +7,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Layout from "@/layouts";
 import EmptyLayout from "@/layouts/EmptyLayout";
-import { routerMode } from "@/config/settings";
+import { publicPath, routerMode } from "@/config/settings";
 
 Vue.use(VueRouter);
 
@@ -80,19 +80,24 @@ export const asyncRoutes = [
 ];
 
 const router = new VueRouter({
+  base: routerMode === "history" ? publicPath : "",
   mode: routerMode,
   scrollBehavior: () => ({
     y: 0,
   }),
   routes: constantRoutes,
 });
+//注释的地方是允许路由重复点击，如果你觉得框架路由跳转规范太过严格可选择放开
 /* const originalPush = VueRouter.prototype.push;
-VueRouter.prototype.push = function push(location) {
+VueRouter.prototype.push = function push(location, onResolve, onReject) {
+  if (onResolve || onReject)
+    return originalPush.call(this, location, onResolve, onReject);
   return originalPush.call(this, location).catch((err) => err);
 }; */
 
 export function resetRouter() {
   router.matcher = new VueRouter({
+    base: routerMode === "history" ? publicPath : "",
     mode: routerMode,
     scrollBehavior: () => ({
       y: 0,
