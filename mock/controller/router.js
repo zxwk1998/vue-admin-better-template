@@ -17,7 +17,7 @@ const data = [
     ],
   },
 ];
-export default [
+module.exports = [
   {
     url: "/menu/navigate",
     type: "post",
