@@ -1,4 +1,3 @@
-import { handleRandomImage } from "../utils";
 const accessTokens = {
   admin: "admin-accessToken",
   editor: "editor-accessToken",
