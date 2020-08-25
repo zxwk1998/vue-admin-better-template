@@ -11,11 +11,6 @@
   "emmet.triggerExpansionOnTab": true,
   "editor.formatOnSave": true,
   "javascript.format.enable": true,
-  "stylelint.enable": true,
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false,
-  "stylelint.autoFixOnSave": true,
   "git.enableSmartCommit": true,
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -30,6 +25,7 @@
     "**/.idea": true
   },
   "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": true,
     "source.fixAll.eslint": true
   },
   "[javascript]": {
@@ -46,5 +42,11 @@
   },
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "prettier.htmlWhitespaceSensitivity": "ignore",
-  "prettier.vueIndentScriptAndStyle": true
+  "prettier.vueIndentScriptAndStyle": true,
+  "docthis.authorName": "chuzhixin 1204505056@qq.com",
+  "docthis.includeAuthorTag": true,
+  "docthis.includeDescriptionTag": true,
+  "docthis.enableHungarianNotationEvaluation": true,
+  "docthis.inferTypesFromNames": true,
+  "vetur.format.defaultFormatter.html": "prettier"
 }
