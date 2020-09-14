@@ -24,14 +24,13 @@ const mutations = {
 };
 const actions = {
   async setRoutes({ commit }, permissions) {
-    let accessedRoutes = [];
-    if (permissions.includes("admin")) {
-      accessedRoutes = asyncRoutes;
-    } else {
-      accessedRoutes = await filterAsyncRoutes(asyncRoutes, permissions);
-    }
-    commit("setRoutes", accessedRoutes);
-    return accessedRoutes;
+    //开源版只过滤动态路由permissions，admin不再默认拥有全部权限
+    const finallyAsyncRoutes = await filterAsyncRoutes(
+      [...asyncRoutes],
+      permissions
+    );
+    commit("setRoutes", finallyAsyncRoutes);
+    return finallyAsyncRoutes;
   },
   async setAllRoutes({ commit }) {
     let { data } = await getRouterList();
