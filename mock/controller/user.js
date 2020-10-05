@@ -8,7 +8,7 @@ module.exports = [
   {
     url: "/publicKey",
     type: "post",
-    response(config) {
+    response() {
       return {
         code: 200,
         msg: "success",
@@ -82,7 +82,6 @@ module.exports = [
       };
     },
   },
-
   {
     url: "/logout",
     type: "post",

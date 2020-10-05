@@ -1,10 +1,10 @@
 /**
- * @copyright chuzhixin 1204505056@qq.com
+ * @author chuzhixin 1204505056@qq.com （不想保留author可删除）
  * @description 路由拦截状态管理，目前两种模式：all模式与intelligence模式，其中partialRoutes是菜单暂未使用
  */
 import { asyncRoutes, constantRoutes } from "@/router";
 import { getRouterList } from "@/api/router";
-import { filterAllRoutes, filterAsyncRoutes } from "@/utils/handleRoutes";
+import { convertRouter, filterAsyncRoutes } from "@/utils/handleRoutes";
 
 const state = { routes: [], partialRoutes: [] };
 const getters = {
@@ -35,7 +35,7 @@ const actions = {
   async setAllRoutes({ commit }) {
     let { data } = await getRouterList();
     data.push({ path: "*", redirect: "/404", hidden: true });
-    let accessRoutes = filterAllRoutes(data);
+    let accessRoutes = convertRouter(data);
     commit("setAllRoutes", accessRoutes);
     return accessRoutes;
   },

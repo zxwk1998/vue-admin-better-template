@@ -57,22 +57,6 @@ export const asyncRoutes = [
     ],
   },
   {
-    path: "/personalCenter",
-    component: Layout,
-    hidden: true,
-    redirect: "personalCenter",
-    children: [
-      {
-        path: "personalCenter",
-        name: "PersonalCenter",
-        component: () => import("@/views/personalCenter/index"),
-        meta: {
-          title: "个人中心",
-        },
-      },
-    ],
-  },
-  {
     path: "*",
     redirect: "/404",
     hidden: true,

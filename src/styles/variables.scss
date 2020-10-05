@@ -1,5 +1,5 @@
 /**
- * @copyright chuzhixin 1204505056@qq.com
+ * @author chuzhixin 1204505056@qq.com （不想保留author可删除）
  * @description 全局主题变量配置，VIP文档内提供多种好看的配色方案（ant-design风格、layui风格、iview风格），请查看VIP文档主题配置篇
  */
 /* stylelint-disable */
@@ -9,7 +9,7 @@ $base-color-default: #1890ff;
 //默认层级
 $base-z-index: 999;
 //横向布局纵向布局时菜单背景色
-$base-menu-background: #001529;
+$base-menu-background: rgb(40, 44, 52);
 //菜单文字颜色
 $base-menu-color: hsla(0, 0%, 100%, 0.95);
 //菜单选中文字颜色
@@ -49,18 +49,18 @@ $base-logo-height: 75px;
 //顶部nav-bar的高度
 $base-nav-bar-height: 60px;
 //顶部多标签页tags-bar的高度
-$base-tags-bar-height: 55px;
+$base-tabs-bar-height: 55px;
 //顶部多标签页tags-bar中每一个item的高度
 $base-tag-item-height: 34px;
 //菜单li标签的高度
 $base-menu-item-height: 50px;
 //app-main的高度
 $base-app-main-height: calc(
-  100vh - #{$base-nav-bar-height} - #{$base-tags-bar-height} - #{$base-padding} -
-  #{$base-padding} - 55px - 30px
+  100vh - #{$base-nav-bar-height} - #{$base-tabs-bar-height} - #{$base-padding} -
+    #{$base-padding} - 55px - 30px
 );
 //纵向布局时左侧导航未折叠时的宽度
-$base-left-menu-width: 256px;
+$base-left-menu-width: 240px;
 //纵向布局时左侧导航未折叠时右侧内容的宽度
 $base-right-content-width: calc(100% - #{$base-left-menu-width});
 //纵向布局时左侧导航已折叠时的宽度
