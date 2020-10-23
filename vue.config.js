@@ -1,3 +1,8 @@
+/**
+ * @author chuzhixin 1204505056@qq.com （不想保留author可删除）
+ * @description cli配置
+ */
+
 const path = require("path");
 const {
   publicPath,
@@ -24,26 +29,20 @@ const Webpack = require("webpack");
 const WebpackBar = require("webpackbar");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 const dayjs = require("dayjs");
-const date = new dayjs().format("YYYY_M_D");
-const time = new dayjs().format("YYYY-M-D HH:mm:ss");
-const CompressionWebpackPlugin = require("compression-webpack-plugin");
+const date = dayjs().format("YYYY_M_D");
+const time = dayjs().format("YYYY-M-D HH:mm:ss");
 const productionGzipExtensions = ["html", "js", "css", "svg"];
 process.env.VUE_APP_TITLE = title || "vue-admin-beautiful";
-process.env.VUE_APP_AUTHOR = author || "chuzhixin";
+process.env.VUE_APP_AUTHOR = author || "chuzhixin 1204505056@qq.com";
 process.env.VUE_APP_UPDATE_TIME = time;
 process.env.VUE_APP_VERSION = version;
-function resolve(dir) {
-  return path.join(__dirname, dir);
-}
 
-function mockServer() {
-  if (process.env.NODE_ENV === "development") {
-    const mockServer = require("./mock/mockServer.js");
-    return mockServer;
-  } else {
-    return "";
-  }
-}
+const resolve = (dir) => path.join(__dirname, dir);
+const mockServer = () => {
+  if (process.env.NODE_ENV === "development")
+    return require("./mock/mockServer.js");
+  else return "";
+};
 
 module.exports = {
   publicPath,
@@ -67,7 +66,6 @@ module.exports = {
       resolve: {
         alias: {
           "@": resolve("src"),
-          "^": resolve("src/components"),
         },
       },
       plugins: [
@@ -79,13 +77,14 @@ module.exports = {
     };
   },
   chainWebpack(config) {
-    /* config.plugins.delete("preload");
-    config.plugins.delete("prefetch"); */
+    config.plugins.delete("preload");
+    config.plugins.delete("prefetch");
     config.module
       .rule("svg")
       .exclude.add(resolve("src/remixIcon"))
       .add(resolve("src/colorfulIcon"))
       .end();
+
     config.module
       .rule("remixIcon")
       .test(/\.svg$/)
@@ -95,6 +94,7 @@ module.exports = {
       .loader("svg-sprite-loader")
       .options({ symbolId: "remix-icon-[name]" })
       .end();
+
     config.module
       .rule("colorfulIcon")
       .test(/\.svg$/)
@@ -104,9 +104,10 @@ module.exports = {
       .loader("svg-sprite-loader")
       .options({ symbolId: "colorful-icon-[name]" })
       .end();
-    config.when(process.env.NODE_ENV === "development", (config) => {
+
+    /*  config.when(process.env.NODE_ENV === "development", (config) => {
       config.devtool("source-map");
-    });
+    }); */
     config.when(process.env.NODE_ENV !== "development", (config) => {
       config.performance.set("hints", false);
       config.devtool("none");
@@ -129,32 +130,11 @@ module.exports = {
             priority: 20,
             test: /[\\/]node_modules[\\/]_?@fortawesome(.*)/,
           },
-          commons: {
-            name: "chunk-commons",
-            test: resolve("src/components"),
-            minChunks: 3,
-            priority: 5,
-            reuseExistingChunk: true,
-          },
         },
       });
       config
         .plugin("banner")
         .use(Webpack.BannerPlugin, [`${webpackBanner}${time}`])
-        .end();
-      config
-        .plugin("compression")
-        .use(CompressionWebpackPlugin, [
-          {
-            filename: "[path].gz[query]",
-            algorithm: "gzip",
-            test: new RegExp(
-              "\\.(" + productionGzipExtensions.join("|") + ")$"
-            ),
-            threshold: 8192,
-            minRatio: 0.8,
-          },
-        ])
         .end();
       config.module
         .rule("images")

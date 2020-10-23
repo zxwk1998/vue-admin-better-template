@@ -38,23 +38,8 @@
 <script>
   import { mapActions, mapGetters } from "vuex";
 
-  import {
-    Avatar,
-    Breadcrumb,
-    ErrorLog,
-    FullScreenBar,
-    ThemeBar,
-  } from "@/layouts/components";
-
   export default {
     name: "NavBar",
-    components: {
-      Avatar,
-      Breadcrumb,
-      ErrorLog,
-      FullScreenBar,
-      ThemeBar,
-    },
     data() {
       return {
         pulse: false,
@@ -104,7 +89,6 @@
       height: $base-nav-bar-height;
 
       .fold-unfold {
-        font-size: 20px;
         color: $base-color-gray;
         cursor: pointer;
       }
@@ -128,7 +112,7 @@
           width: 1em;
           height: 1em;
           margin-right: 15px;
-          font-size: $base-font-size-big;
+          font-size: $base-font-size-small;
           color: $base-color-gray;
           cursor: pointer;
           fill: $base-color-gray;
