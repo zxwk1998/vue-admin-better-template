@@ -16,4 +16,3 @@ import VabPermissions from "zx-layouts/Permissions";
 Vue.use(Vab);
 Vue.use(VabPermissions);
 Vue.use(VabDrag);
-Vue.use(VabQueryForm);
