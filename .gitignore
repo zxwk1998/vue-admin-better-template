@@ -17,3 +17,6 @@ public/video
 *.7z
 /src/layouts/components/zx-layouts
 /zx-templates
+/src/styles/themes/glory.scss
+/src/styles/themes/green.scss
+/src/styles/themes/dark.scss
