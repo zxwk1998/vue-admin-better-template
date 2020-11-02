@@ -1,5 +1,6 @@
 <template>
-  <section v-if="routerView" class="app-main-container">
+  <div v-if="routerView" class="app-main-container">
+    <vab-github-corner />
     <transition mode="out-in" name="fade-transform">
       <keep-alive :include="cachedRoutes" :max="keepAliveMaxNum">
         <router-view :key="key" class="app-main-height" />
@@ -10,7 +11,7 @@
       <vab-icon :icon="['fas', 'copyright']"></vab-icon>
       xxx-项目 {{ fullYear }}
     </footer>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -23,7 +24,7 @@
   } from "@/config/settings";
 
   export default {
-    name: "AppMain",
+    name: "VabAppMain",
     data() {
       return {
         show: false,
