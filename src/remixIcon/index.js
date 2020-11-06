@@ -1,4 +1,4 @@
-const req = require.context("./svg", false, /\.svg$/),
+const req = require.context('./svg', false, /\.svg$/),
   requireAll = (requireContext) => {
     /*let a = requireContext.keys().map(requireContext);
     let arr = [];
@@ -8,6 +8,6 @@ const req = require.context("./svg", false, /\.svg$/),
       arr.push(icon);
     }
     console.log(JSON.stringify(arr));*/
-    return requireContext.keys().map(requireContext);
-  };
-requireAll(req);
+    return requireContext.keys().map(requireContext)
+  }
+requireAll(req)

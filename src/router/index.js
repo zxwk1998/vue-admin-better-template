@@ -3,53 +3,53 @@
  * @description router全局配置，如有必要可分文件抽离
  */
 
-import Vue from "vue";
-import VueRouter from "vue-router";
-import Layout from "@/layouts";
-import EmptyLayout from "@/layouts/EmptyLayout";
-import { publicPath, routerMode } from "@/config/settings";
+import Vue from 'vue'
+import VueRouter from 'vue-router'
+import Layout from '@/layouts'
+import EmptyLayout from '@/layouts/EmptyLayout'
+import { publicPath, routerMode } from '@/config'
 
-Vue.use(VueRouter);
+Vue.use(VueRouter)
 
 export const constantRoutes = [
   {
-    path: "/login",
-    component: () => import("@/views/login/index"),
+    path: '/login',
+    component: () => import('@/views/login/index'),
     hidden: true,
   },
   {
-    path: "/register",
-    component: () => import("@/views/register/index"),
+    path: '/register',
+    component: () => import('@/views/register/index'),
     hidden: true,
   },
   {
-    path: "/401",
-    name: "401",
-    component: () => import("@/views/401"),
+    path: '/401',
+    name: '401',
+    component: () => import('@/views/401'),
     hidden: true,
   },
   {
-    path: "/404",
-    name: "404",
-    component: () => import("@/views/404"),
+    path: '/404',
+    name: '404',
+    component: () => import('@/views/404'),
     hidden: true,
   },
-];
+]
 
 /*当settings.js里authentication配置的是intelligence时，views引入交给前端配置*/
 export const asyncRoutes = [
   {
-    path: "/",
+    path: '/',
     component: Layout,
-    redirect: "/index",
+    redirect: '/index',
     children: [
       {
-        path: "/index",
-        name: "Index",
-        component: () => import("@/views/index/index"),
+        path: '/index',
+        name: 'Index',
+        component: () => import('@/views/index/index'),
         meta: {
-          title: "首页",
-          icon: "home",
+          title: '首页',
+          icon: 'home',
           affix: true,
           noKeepAlive: true,
         },
@@ -57,20 +57,20 @@ export const asyncRoutes = [
     ],
   },
   {
-    path: "*",
-    redirect: "/404",
+    path: '*',
+    redirect: '/404',
     hidden: true,
   },
-];
+]
 
 const router = new VueRouter({
-  base: routerMode === "history" ? publicPath : "",
+  base: routerMode === 'history' ? publicPath : '',
   mode: routerMode,
   scrollBehavior: () => ({
     y: 0,
   }),
   routes: constantRoutes,
-});
+})
 //注释的地方是允许路由重复点击，如果你觉得框架路由跳转规范太过严格可选择放开
 /* const originalPush = VueRouter.prototype.push;
 VueRouter.prototype.push = function push(location, onResolve, onReject) {
@@ -81,13 +81,13 @@ VueRouter.prototype.push = function push(location, onResolve, onReject) {
 
 export function resetRouter() {
   router.matcher = new VueRouter({
-    base: routerMode === "history" ? publicPath : "",
+    base: routerMode === 'history' ? publicPath : '',
     mode: routerMode,
     scrollBehavior: () => ({
       y: 0,
     }),
     routes: constantRoutes,
-  }).matcher;
+  }).matcher
 }
 
-export default router;
+export default router
