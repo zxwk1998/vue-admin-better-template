@@ -67,6 +67,16 @@ a {
   cursor: pointer;
 }
 
+* {
+  transition: $base-transition;
+}
+svg {
+  transition: none;
+  * {
+    transition: none;
+  }
+}
+
 html {
   body {
     position: relative;
@@ -145,6 +155,9 @@ html {
         @include base-scrollbar;
 
         > [class*='-container'] {
+          * {
+            transition: none;
+          }
           padding: $base-padding;
           background: $base-color-white;
         }

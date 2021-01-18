@@ -9,7 +9,7 @@
     <footer v-show="footerCopyright" class="footer-copyright">
       Copyright
       <vab-icon :icon="['fas', 'copyright']"></vab-icon>
-      xxx-项目 {{ fullYear }}
+      vue-admin-beautiful-pro 开源免费版 {{ fullYear }}
     </footer>
   </div>
 </template>
@@ -59,7 +59,7 @@
     },
     created() {
       //重载所有路由
-      this.$baseEventBus.$on('reload-routerview', () => {
+      this.$baseEventBus.$on('reload-router-view', () => {
         this.routerView = false
         this.$nextTick(() => {
           this.routerView = true

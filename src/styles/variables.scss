@@ -5,11 +5,11 @@
 /* stylelint-disable */
 @charset "utf-8";
 //框架默认主题色
-$base-color-default: #1890ff;
+$base-color-default: #5470c6;
 //默认层级
 $base-z-index: 999;
 //横向布局纵向布局时菜单背景色
-$base-menu-background: rgb(40, 44, 52);
+$base-menu-background: #2f3447;
 //菜单文字颜色
 $base-menu-color: hsla(0, 0%, 100%, 0.95);
 //菜单选中文字颜色
@@ -26,12 +26,12 @@ $base-font-size-bigger: 18px;
 $base-font-size-max: 22px;
 $base-font-color: #606266;
 $base-color-blue: $base-color-default;
-$base-color-green: #13ce66;
+$base-color-green: #91cc75;
 $base-color-white: #fff;
 $base-color-black: #000;
-$base-color-yellow: #ffba00;
+$base-color-yellow: #fac858;
 $base-color-orange: #ff6700;
-$base-color-red: #ff4d4f;
+$base-color-red: #ee6666;
 $base-color-gray: rgba(0, 0, 0, 0.65);
 $base-main-width: 1279px;
 $base-border-radius: 2px;
@@ -68,8 +68,9 @@ $base-left-menu-width-min: 65px;
 //纵向布局时左侧导航已折叠时右侧内容的宽度
 $base-right-content-width-min: calc(100% - #{$base-left-menu-width-min});
 //默认动画
-$base-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-//默认动画时长
+$base-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), border 0s,
+  background 0s, color 0s, font-size 0s;
+//默认动画长
 $base-transition-time: 0.3s;
 
 :export {
