@@ -34,17 +34,12 @@
           <div slot="header">
             VIP群（自愿原则）
             <el-button style="float: right; padding: 3px 0" type="text">
-              ￥100
+              ￥100（不再提供）
             </el-button>
           </div>
           <div>
             <ul>
-              <li>支持以上所有特权</li>
-              <li>支持四种主题</li>
-              <li>
-                vip群提供终身技术支持、专属文档及视频教程，可快速入手框架，包含打包优化，公共外框布局layout本地化及自定义教程等
-              </li>
-              <li>QQ咨询 1204505056</li>
+              <li>为防止不必要的误解，开源版不再提供vip群</li>
             </ul>
           </div>
         </el-card>
