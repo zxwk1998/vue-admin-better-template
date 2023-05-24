@@ -1,17 +1,20 @@
+<div style="filter: grayscale(100%)">
+
 简体中文 | [English](./README.en.md)
 
-<div align="center"><img width="200" src="https://gitee.com/chu1204505056/image/raw/master/logo/vab.svg"/>
-<h1> vue-admin-better-pro（element-ui） </h1>
-<p>漫天的飞雪，是飞舞的音符，用祝福奏出期盼，愿疫情早日消散，愿明年的你不再有遗憾，愿你三冬暖，愿你春不寒，愿你天黑有灯，下雨有伞。
-</p>
+<div align="center"><img width="200" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/logo/vab.png"/>
+<h1> vue-admin-better</h1>
+
+<p>众志成城，攻坚克难，愿所有美好纷沓而来！</p>
 </div>
 
-[![Website](<https://img.shields.io/badge/ good luck - vue admin beautiful -blue?style=flat-square>)](https://vue-admin-better.com)
-[![stars](https://img.shields.io/github/stars/chuzhixin/vue-admin-better?style=flat-square&logo=GitHub)](https://github.com/chuzhixin/vue-admin-better)
+[![stars](https://img.shields.io/github/stars/chuzhixin/vue-admin-beautiful?style=flat-square&logo=GitHub)](https://github.com/chuzhixin/vue-admin-beautiful)
 [![star](https://gitee.com/chu1204505056/vue-admin-better/badge/star.svg?theme=gray)](https://gitee.com/chu1204505056/vue-admin-better)
-[![license](https://img.shields.io/github/license/chuzhixin/vue-admin-better?style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
+[![license](https://img.shields.io/github/license/chuzhixin/vue-admin-beautiful?style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
 
-# 🎉 特性
+---
+
+## 🎉 特性
 
 - 💪 40+高质量单页
 - 💅 RBAC 模型 + JWT 权限控制
@@ -23,95 +26,107 @@
 
 ## 🌐 地址
 
-- [🎉 vue2.x + element-ui（免费商用，支持 PC、平板、手机）](http://vue-admin-better.com/vue-admin-better-element/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [🎉 vue2.x + element-ui（免费商用，支持 PC、平板、手机）](https://vue-admin-beautiful.com/vue-admin-beautiful-element/)
 
-- [⚡️ vue3.x + element-plus（alpha 版本，免费商用，支持 PC、平板、手机）](http://vue-admin-better.com/vue-admin-better-element-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [⚡️ vue3.x + element-plus（alpha 版本，免费商用，支持 PC、平板、手机）](https://vue-admin-beautiful.com/vue-admin-beautiful-element-plus/)
 
-- [⚡️ vue3.x + ant-design-vue（beta 版本，免费商用，支持 PC、平板、手机）](http://vue-admin-better.com/vue-admin-better-antdv/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [⚡️ vue3.x + ant-design-vue（beta 版本，免费商用，支持 PC、平板、手机）](https://vue-admin-beautiful.com/vue-admin-beautiful-antdv/)
 
-- [🚀 admin pro 演示地址（付费版本，支持 PC、平板、手机）](http://vue-admin-better.com/admin-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [⚡️ vue3.x + vite + arco](https://vue-admin-beautiful.com/vue-admin-arco/)
 
-- [🚀 admin plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](http://vue-admin-better.com/admin-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [🚀 admin pro 演示地址（vue2.x 付费版本，支持 PC、平板、手机）](https://vue-admin-beautiful.com/admin-pro/)
 
-- [📌 pro 及 plus 购买地址 authorization](http://vue-admin-better.com/authorization/)
+- [🚀 admin plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](https://vue-admin-beautiful.com/admin-plus/)
 
-- [🌐 github 仓库地址](https://github.com/chuzhixin/vue-admin-better?utm_source=gold_browser_extension)
+- [📌 pro 及 plus 购买地址 authorization](https://vue-admin-beautiful.com/authorization/)
+
+- [🚀 Vue Shop Vite 商城（付费版本）](https://vue-admin-beautiful.com/shop-vite/)
+
+- [🌐 github 仓库地址](https://github.com/chuzhixin/vue-admin-beautiful?utm_source=gold_browser_extension)
 
 - [🌐 码云仓库地址](https://gitee.com/chu1204505056/vue-admin-better?_from=gitee_search)
 
-- 近期 vab 官网频繁遭到 ddos 攻击，我们已采取相关防范措施，如网站无法访问请访问备份地址
+## 🌐 备份地址
 
-## 🌐 备份地址（支持 https 网站自动更新）
+- [🚀 admin pro 演示地址（付费版本，支持 PC、平板、手机）](https://chu1204505056.gitee.io/admin-pro/)
 
-- [🚀 admin pro 演示地址（付费版本，支持 PC、平板、手机）](https://chu1204505056.gitee.io/admin-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [🚀 admin plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](https://chu1204505056.gitee.io/admin-plus/)
 
-- [🚀 admin plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](https://chu1204505056.gitee.io/admin-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+## 🍻 前端讨论 QQ 群
 
-## 🌱 vue3.x vue3.0-antdv 分支（ant-design-vue）[点击切换分支](https://github.com/chuzhixin/vue-admin-better-pro/tree/vue3.0-antdv)
+- 请我们喝杯咖啡，打赏后联系 QQ 783963206 邀请您进入讨论群（由于用户数较多，如果您打赏后未通过好友请求，请联系商家），不管您请还是不请，您都可以享受到开源的代码，感谢您的支持和信任，群内提供 vue-admin-better 基础版本、开发工具自动配置教程及项目开发文档。
+<table>
+<tr>
+<td>
+<img width="200px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/zfb_kf.jpg">
+</td>
+<td>
+<img width="200px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/qq_group/vab-2.jpg">
+</td>
+<td>
+<img width="200px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/qq_group/vab-3.jpg">
+</td>
+</tr>
+</table>
+
+## 📦️ 桌面应用程序
+
+- [Admin Pro](https://gitee.com/chu1204505056/microsoft-store/raw/master/AdminPlus.zip)
+- [Admin Plus](https://gitee.com/chu1204505056/microsoft-store/raw/master/AdminPlus.zip)
+
+## 🌱 vue3.x vue3.0-antdv 分支（ant-design-vue）[点击切换分支](https://github.com/chuzhixin/vue-admin-better/tree/vue3.0-antdv)
 
 ```bash
 # 克隆项目
 git clone -b vue3.0-antdv https://github.com/chuzhixin/vue-admin-better.git
 # 安装依赖
-npm i
+npm i --registry=http://mirrors.cloud.tencent.com/npm/
 # 本地开发 启动项目
 npm run serve
 ```
 
-## 🌱vue2.x master 分支（element-ui）[点击切换分支](https://github.com/chuzhixin/vue-admin-better-pro/tree/master)
+## 🌱 vue3.x arco-design [点击切换仓库](https://github.com/chuzhixin/vue-admin-arco)
+
+```bash
+# 克隆项目
+git clone  https://github.com/chuzhixin/vue-admin-arco.git
+# 安装依赖
+npm i --registry=http://mirrors.cloud.tencent.com/npm/
+# 本地开发 启动项目
+npm run dev
+```
+
+## 🌱vue2.x master 分支（element-ui）[点击切换分支](https://github.com/chuzhixin/vue-admin-better/tree/master)
 
 ```bash
 # 克隆项目
 git clone -b master https://github.com/chuzhixin/vue-admin-better.git
 # 安装依赖
-npm i
+npm i --registry=http://mirrors.cloud.tencent.com/npm/
 # 本地开发 启动项目
 npm run serve
 ```
 
-## 🍻 前端讨论 QQ 群
-
-- 请我们喝杯咖啡，支付后联系 QQ 783963206 邀请您进入讨论群（由于用户数较多，如果您打赏后未通过好友请求，请在支付宝支付页面选择联系商家），不管您请还是不请，您都可以享受到开源的代码，感谢您的支持和信任，群内提供 vue-admin-beautifu 基础版本、开发工具自动配置教程及项目开发文档。
-
-<table>
-<tr>
-<!-- <td>
-<img width="200px" src="https://gitee.com/chu1204505056/image/raw/master/qq_group/hbm.jpg">
-</td> -->
-<td>
-<img width="200px" src="https://gitee.com/chu1204505056/image/raw/master/zfb_kf.jpg">
-</td>
-<td>
-<img width="200px" src="https://gitee.com/chu1204505056/image/raw/master/qq_group/vab-2.jpg">
-</td>
-<td>
-<img width="200px" src="https://gitee.com/chu1204505056/image/raw/master/qq_group/vab-3.jpg">
-</td>
-</tr>
-</table>
-
 ## 🔊 友情链接
 
-- [uView 文档（超棒的移动跨端框架，文档详细，上手容易）](https://uviewui.com/)
+- [OPSLI 基于 vue-admin-better 开源版的最佳实践](https://github.com/hiparker/opsli-boot)
 
-- [uView 开源地址（uni-app 生态优秀的 UI 框架，全面的组件和便捷的工具会让您信手拈来，如鱼得水）](https://github.com/YanxinNet/uView/)
+- [uView uni-app 生态最优秀的 UI 框架](https://github.com/YanxinNet/uView/)
 
-- [Element UI 表单设计及代码生成器（可视化表单设计器，一键生成 element 表单）](https://github.com/JakHuang/form-generator/)
+- [form-generator Element 表单设计代码生成器](https://github.com/JakHuang/form-generator/)
 
-- [luch-request（基于 Promise 开发的 uni-app 跨平台、项目级别的请求库）](https://www.quanzhan.co/luch-request/)
+- [wangEditor 国产最强开源富文本编辑](https://github.com/wangeditor-team/wangEditor)
 
 ## 🙈 我们承诺将定期赞助的开源项目（感谢巨人）
 
-<a title="vue" href="https://cn.vuejs.org/" target="_blank">
-<img width="64px" src="https://gitee.com/chu1204505056/image/raw/master/vue.png"/>
+<a title="vue" href="https://opencollective.com/vuejs" target="_blank">
+<img width="64px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/vue.png"/>
 </a>
-
-<a title="ant-design-vue" href="https://github.com/vueComponent/ant-design-vue#backers" target="_blank">
-<img width="64px" src="https://gitee.com/chu1204505056/image/raw/master/antdv.svg"/>
-</a>
-
 <a title="element-plus" href="https://opencollective.com/element-plus" target="_blank">
-<img width="64px" src="https://gitee.com/chu1204505056/image/raw/master/element-plus.png"/>
+<img width="64px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/element-plus.png"/>
+</a>
+<a title="ant-design-vue" href="https://opencollective.com/ant-design-vue" target="_blank">
+<img width="64px" src="https://images.opencollective.com/ant-design-vue/2ec179b/logo/256.png"/>
 </a>
 
 ## 🎨 鸣谢
@@ -124,6 +139,7 @@ npm run serve
 | [ant-design-vue](https://github.com/vueComponent/ant-design-vue) |
 | [mock](https://github.com/nuysoft/Mock)                          |
 | [axios](https://github.com/axios/axios)                          |
+| [wangEditor](https://github.com/wangeditor-team/wangEditor)      |
 
 ## 👷 框架杰出贡献者（排名不分先后）
 
@@ -172,7 +188,7 @@ npm run serve
 
 ## 🎉 功能地图
 
-![img](https://gitee.com/chu1204505056/image/raw/master/vip/flow.drawio.png)
+![img](https://fastly.jsdelivr.net/gh/chuzhixin/image/vip/flow.drawio.png)
 
 ## 🗃️ 效果图
 
@@ -181,34 +197,32 @@ npm run serve
 <table>
 <tr>
 <td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/2.png">
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/2.png">
 </td>
 <td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/6.png">
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/8.png">
-</td>
-<td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/9.png">
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/6.png">
 </td>
 </tr>
 <tr>
 <td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/3.png">
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/8.png">
 </td>
 <td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/5.png">
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/9.png">
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/3.png">
+</td>
+<td>
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/5.png">
 </td>
 </tr>
 </table>
 
 ## 📄 商用注意事项
 
-此项目可免费用于商业用途，请遵守 MIT 协议并保留作者技术支持声明，如需自定义源码版权信息请联系客服 QQ 783963206。
+此项目可免费用于商业用途，请遵守 MIT 协议并保留作者技术支持声明。
 
-<!-- ## 严正声明
-
-近期发现不少游手好闲之人有组织有预谋的利用码云、知乎、掘金等网站可用国外非法网站提供的匿名手机号注册的账号 bug 冒充 vab 去攻击 vue-element-admin，iview-admin，若依，d2-admin，ant-design-vue 的行为，恶意制造对立，试图让其他开源作者卷入其中，对各位开源作者造成的影响我们深表歉意，我们欢迎 vab 的用户去体验其他更优秀的框架，vue-admin-better 走到今天实属不易，被人冒充，被人发帖诋毁，被人故意发布错误言论假装发帖表扬实则为我们招骂，无意动任何人的奶酪，从 2020 年至今坚持全职维护已过一年时间，说实在的我们靠技术生存并不丢人吧，一年来感谢 vab 的用户对我们不离不弃，也希望大家越来越好，加油！ -->
+</div>

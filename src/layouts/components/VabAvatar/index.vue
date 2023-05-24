@@ -51,16 +51,16 @@
             break
           case 'pro':
             window.open(
-              'https://chu1204505056.gitee.io/admin-pro/?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci='
+              'https://vue-admin-beautiful.com/admin-pro/?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci='
             )
             break
           case 'plus':
             window.open(
-              'https://chu1204505056.gitee.io/admin-plus/?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci='
+              'https://vue-admin-beautiful.com/admin-plus/?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci='
             )
           case 'shop':
             window.open(
-              'https://chu1204505056.gitee.io/shop-vite/?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci='
+              'https://vue-admin-beautiful.com/shop-vite/?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci='
             )
         }
       },

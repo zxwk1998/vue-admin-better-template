@@ -1,17 +1,18 @@
 [简体中文](./README.md) | English
 
-<div align="center"><img width="200" src="https://gitee.com/chu1204505056/image/raw/master/logo/vab.svg"/>
-<h1> vue-admin-better-pro（element-ui） </h1>
+<div align="center"><img width="200" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/logo/vab.png"/>
+<h1> vue-admin-better（element-ui） </h1>
 <p>The flying snow all over the sky is a flying note, playing out expectations with blessings. May the epidemic dissipate as soon as possible, may you no longer have regrets next year, may you be warm in winter, may you not be cold in spring, and may you have lights in the dark and an umbrella in the rain.
 </p>
 </div>
 
-[![Website](<https://img.shields.io/badge/ good luck - vue admin beautiful -blue?style=flat-square>)](https://vue-admin-better.com)
-[![stars](https://img.shields.io/github/stars/chuzhixin/vue-admin-better?style=flat-square&logo=GitHub)](https://github.com/chuzhixin/vue-admin-better)
+[![stars](https://img.shields.io/github/stars/chuzhixin/vue-admin-beautiful?style=flat-square&logo=GitHub)](https://github.com/chuzhixin/vue-admin-beautiful)
 [![star](https://gitee.com/chu1204505056/vue-admin-better/badge/star.svg?theme=gray)](https://gitee.com/chu1204505056/vue-admin-better)
-[![license](https://img.shields.io/github/license/chuzhixin/vue-admin-better?style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
+[![license](https://img.shields.io/github/license/chuzhixin/vue-admin-beautiful?style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
 
-# 🎉 characteristic
+---
+
+# 🎉 Characteristic
 
 - 💪 40 + high quality single page
 - 💅 RBAC model + JWT permission control
@@ -21,45 +22,52 @@
 - 🚀 Cross platform PC, mobile terminal and tablet
 - 📦 Back end route dynamic rendering
 
-## 🌐 地址
+## 🌐 Address
 
-- [🎉 Vue2. X + element UI (free commercial, PC, tablet and mobile phone supported)](http://vue-admin-better.com/vue-admin-better-element/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [🎉 Vue2. X + element UI (free commercial, PC, tablet and mobile phone supported)](https://vue-admin-beautiful.com/vue-admin-beautiful-element/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [⚡️ Vue3. X + element plus (alpha version, free commercial, supporting PC, tablet and mobile phone)](http://vue-admin-better.com/vue-admin-better-element-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [⚡️ Vue3. X + element plus (alpha version, free commercial, supporting PC, tablet and mobile phone)](https://vue-admin-beautiful.com/vue-admin-beautiful-element-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [⚡️ Vue3. X + ant design Vue (beta version, free commercial, supporting PC, tablet and mobile phone)](http://vue-admin-better.com/vue-admin-better-antdv/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [⚡️ Vue3. X + ant design Vue (beta version, free commercial, supporting PC, tablet and mobile phone)](https://vue-admin-beautiful.com/vue-admin-beautiful-antdv/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [🚀 Admin Pro demo address (paid version, supporting PC, tablet and mobile phone)](http://vue-admin-better.com/admin-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [⚡️ vue3.x + vite + vue-admin-arco](https://vue-admin-beautiful.com/vue-admin-arco/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [🚀 Admin plus demo address (vue3. X paid version, supporting PC, tablet and mobile phone)](http://vue-admin-better.com/admin-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [🚀 Admin Pro demo address (vue2.x paid version, supporting PC, tablet and mobile phone)](https://vue-admin-beautiful.com/admin-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [📌 Pro and plus purchase address authorization](http://vue-admin-better.com/authorization/)
+- [🚀 Admin plus demo address (vue3.x paid version, supporting PC, tablet and mobile phone)](https://vue-admin-beautiful.com/admin-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [🌐 Github Warehouse address](https://github.com/chuzhixin/vue-admin-better?utm_source=gold_browser_extension)
+- [📌 Pro and plus purchase address authorization](https://vue-admin-beautiful.com/authorization/)
+
+- [🌐 Github Warehouse address](https://github.com/chuzhixin/vue-admin-beautiful?utm_source=gold_browser_extension)
 
 - [🌐 Gitee Warehouse address](https://gitee.com/chu1204505056/vue-admin-better?_from=gitee_search)
 
 - Recently, the VAB official website has been frequently attacked by DDoS. We have taken relevant preventive measures. If the website cannot be accessed, please visit the backup address
 
-## 🌐 备份地址（支持 https 网站自动更新）
+## 🌐 Backup address (support automatic update of HTTPS website)
 
 - [🚀 Admin Pro demo address (paid version, supporting PC, tablet and mobile phone)](https://chu1204505056.gitee.io/admin-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
 - [🚀 Admin plus demo address (vue3. X paid version, supporting PC, tablet and mobile phone)](https://chu1204505056.gitee.io/admin-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-## 🌱 Vue3.x vue3.0-antdv [Click switch branch](https://github.com/chuzhixin/vue-admin-better-pro/tree/vue3.0-antdv)
+## 📦️ Desktop applications
+
+- [Admin Pro](https://gitee.com/chu1204505056/microsoft-store/raw/master/AdminPlus.zip)
+- [Admin Plus](https://gitee.com/chu1204505056/microsoft-store/raw/master/AdminPlus.zip)
+
+## 🌱 Vue3.x vue3.0-antdv [Click switch branch](https://github.com/chuzhixin/vue-admin-better/tree/vue3.0-antdv)
 
 ```bash
 git clone -b vue3.0-antdv https://github.com/chuzhixin/vue-admin-better.git
-npm i
+npm i --registry=http://mirrors.cloud.tencent.com/npm/
 npm run serve
 ```
 
-## 🌱 Vue2.xmain [Click switch branch](https://github.com/chuzhixin/vue-admin-better-pro/tree/master)
+## 🌱 Vue2.xmain [Click switch branch](https://github.com/chuzhixin/vue-admin-better/tree/master)
 
 ```bash
 git clone -b master https://github.com/chuzhixin/vue-admin-better.git
-npm i
+npm i --registry=http://mirrors.cloud.tencent.com/npm/
 npm run serve
 ```
 
@@ -70,32 +78,30 @@ npm run serve
 <table>
 <tr>
 <!-- <td>
-<img width="200px" src="https://gitee.com/chu1204505056/image/raw/master/qq_group/hbm.jpg">
+<img width="200px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/qq_group/hbm.jpg">
 </td> -->
 <td>
-<img width="200px" src="https://gitee.com/chu1204505056/image/raw/master/zfb_kf.jpg">
+<img width="200px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/zfb_kf.jpg">
 </td>
 <td>
-<img width="200px" src="https://gitee.com/chu1204505056/image/raw/master/qq_group/vab-2.jpg">
+<img width="200px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/qq_group/vab-2.jpg">
 </td>
 <td>
-<img width="200px" src="https://gitee.com/chu1204505056/image/raw/master/qq_group/vab-3.jpg">
+<img width="200px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/qq_group/vab-3.jpg">
 </td>
 </tr>
 </table>
 
 ## 🙈 We promise to sponsor open source projects regularly (thank giant)
 
-<a title="vue" href="https://cn.vuejs.org/" target="_blank">
-<img width="64px" src="https://gitee.com/chu1204505056/image/raw/master/vue.png"/>
+<a title="vue" href="https://opencollective.com/vuejs" target="_blank">
+<img width="64px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/vue.png"/>
 </a>
-
-<a title="ant-design-vue" href="https://github.com/vueComponent/ant-design-vue#backers" target="_blank">
-<img width="64px" src="https://gitee.com/chu1204505056/image/raw/master/antdv.svg"/>
-</a>
-
 <a title="element-plus" href="https://opencollective.com/element-plus" target="_blank">
-<img width="64px" src="https://gitee.com/chu1204505056/image/raw/master/element-plus.png"/>
+<img width="64px" src="https://fastly.jsdelivr.net/gh/chuzhixin/image/element-plus.png"/>
+</a>
+<a title="ant-design-vue" href="https://opencollective.com/ant-design-vue" target="_blank">
+<img width="64px" src="https://images.opencollective.com/ant-design-vue/2ec179b/logo/256.png"/>
 </a>
 
 ## 🎨 Acknowledge
@@ -155,7 +161,7 @@ Precautions for use:
 
 ## 🎉 Function map
 
-![img](https://gitee.com/chu1204505056/image/raw/master/vip/flow.drawio.png)
+![img](https://fastly.jsdelivr.net/gh/chuzhixin/image/vip/flow.drawio.png)
 
 ## 🗃️ design sketch
 
@@ -164,26 +170,26 @@ The following is a screenshot of the pro version:
 <table>
 <tr>
 <td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/2.png">
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/2.png">
 </td>
 <td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/6.png">
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/8.png">
-</td>
-<td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/9.png">
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/6.png">
 </td>
 </tr>
 <tr>
 <td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/3.png">
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/8.png">
 </td>
 <td>
-<img src="https://gitee.com/chu1204505056/image/raw/master/5.png">
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/9.png">
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/3.png">
+</td>
+<td>
+<img src="https://fastly.jsdelivr.net/gh/chuzhixin/image/5.png">
 </td>
 </tr>
 </table>
@@ -194,4 +200,4 @@ This project can be used for commercial purposes free of charge. Please abide by
 
 <!-- ## 严正声明
 
-近期发现不少游手好闲之人有组织有预谋的利用码云、知乎、掘金等网站可用国外非法网站提供的匿名手机号注册的账号 bug 冒充 vab 去攻击 vue-element-admin，iview-admin，若依，d2-admin，ant-design-vue 的行为，恶意制造对立，试图让其他开源作者卷入其中，对各位开源作者造成的影响我们深表歉意，我们欢迎 vab 的用户去体验其他更优秀的框架，vue-admin-better 走到今天实属不易，被人冒充，被人发帖诋毁，被人故意发布错误言论假装发帖表扬实则为我们招骂，无意动任何人的奶酪，从 2020 年至今坚持全职维护已过一年时间，说实在的我们靠技术生存并不丢人吧，一年来感谢 vab 的用户对我们不离不弃，也希望大家越来越好，加油！ -->
+近期发现不少游手好闲之人有组织有预谋的利用码云、知乎、掘金等网站可用国外非法网站提供的匿名手机号注册的账号 bug 冒充 vab 去攻击 vue-element-admin，iview-admin，若依，d2-admin，ant-design-vue 的行为，恶意制造对立，试图让其他开源作者卷入其中，对各位开源作者造成的影响我们深表歉意，我们欢迎 vab 的用户去体验其他更优秀的框架，vue-admin-beautiful 走到今天实属不易，被人冒充，被人发帖诋毁，被人故意发布错误言论假装发帖表扬实则为我们招骂，无意动任何人的奶酪，从 2020 年至今坚持全职维护已过一年时间，说实在的我们靠技术生存并不丢人吧，一年来感谢 vab 的用户对我们不离不弃，也希望大家越来越好，加油！ -->
