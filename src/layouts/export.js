@@ -1,5 +1,5 @@
 /**
- * @author chuzhixin 1204505056@qq.com （不想保留author可删除）
+ * @author https://vue-admin-beautiful.com （不想保留author可删除）
  * @description 公共布局及样式自动引入
  */
 
@@ -12,7 +12,7 @@ requireComponents.keys().forEach((fileName) => {
   Vue.component(componentName, componentConfig.default || componentConfig)
 })
 
-const requireZxLayouts = require.context('zx-layouts', true, /\.vue$/)
+const requireZxLayouts = require.context('layouts', true, /\.vue$/)
 requireZxLayouts.keys().forEach((fileName) => {
   const componentConfig = requireZxLayouts(fileName)
   const componentName = componentConfig.default.name

@@ -1,15 +1,15 @@
 /**
- * @author chuzhixin 1204505056@qq.com （不想保留author可删除）
+ * @author https://vue-admin-beautiful.com （不想保留author可删除）
  * @description 全局主题变量配置
  */
 /* stylelint-disable */
 @charset "utf-8";
 //框架默认主题色
-$base-color-default: #41b584;
+$base-color-default: #409eff;
 //默认层级
 $base-z-index: 999;
 //横向布局纵向布局时菜单背景色
-$base-menu-background: #2f3447;
+$base-menu-background: #21252b;
 //菜单文字颜色
 $base-menu-color: hsla(0, 0%, 100%, 0.95);
 //菜单选中文字颜色
@@ -26,15 +26,15 @@ $base-font-size-bigger: 18px;
 $base-font-size-max: 22px;
 $base-font-color: #606266;
 $base-color-blue: $base-color-default;
-$base-color-green: #47ba80;
+$base-color-green: #41b882;
 $base-color-white: #fff;
 $base-color-black: #000;
-$base-color-yellow: #fac858;
+$base-color-yellow: #ffa91b;
 $base-color-orange: #ff6700;
 $base-color-red: #f34d37;
 $base-color-gray: rgba(0, 0, 0, 0.65);
 $base-main-width: 1279px;
-$base-border-radius: 2px;
+$base-border-radius: 4px;
 $base-border-color: #dcdfe6;
 //输入框高度
 $base-input-height: 32px;
