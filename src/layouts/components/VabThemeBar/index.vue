@@ -94,7 +94,7 @@
       this.$baseEventBus.$on('theme', () => {
         this.handleOpenThemeBar()
       })
-      const theme = localStorage.getItem('vue-admin-beautiful-theme')
+      const theme = localStorage.getItem('vue-admin-better-theme')
       if (null !== theme) {
         this.theme = JSON.parse(theme)
         this.handleSetTheme()
@@ -119,7 +119,7 @@
       handleSetTheme() {
         let { name, layout, header, tabsBar } = this.theme
         localStorage.setItem(
-          'vue-admin-beautiful-theme',
+          'vue-admin-better-theme',
           `{
             "name":"${name}",
             "layout":"${layout}",
@@ -132,7 +132,7 @@
         this.changeTabsBar(tabsBar)
         document.getElementsByTagName(
           'body'
-        )[0].className = `vue-admin-beautiful-theme-${name}`
+        )[0].className = `vue-admin-better-theme-${name}`
         this.drawerVisible = false
       },
       handleSaveTheme() {
@@ -142,8 +142,8 @@
         let { name } = this.theme
         document
           .getElementsByTagName('body')[0]
-          .classList.remove(`vue-admin-beautiful-theme-${name}`)
-        localStorage.removeItem('vue-admin-beautiful-theme')
+          .classList.remove(`vue-admin-better-theme-${name}`)
+        localStorage.removeItem('vue-admin-better-theme')
         this.$refs['form'].resetFields()
         Object.assign(this.$data, this.$options.data())
         this.changeHeader(defaultLayout)
@@ -156,7 +156,7 @@
       },
       handleGetCode() {
         const url =
-          'https://github.com/chuzhixin/vue-admin-beautiful/tree/master/src/views'
+          'https://github.com/chuzhixin/vue-admin-better/tree/master/src/views'
         let path = this.$route.path + '/index.vue'
         if (path === '/vab/menu1/menu1-1/menu1-1-1/index.vue') {
           path = '/vab/nested/menu1/menu1-1/menu1-1-1/index.vue'

@@ -1,10 +1,10 @@
 {
-  "name": "vue-admin-beautiful-template",
+  "name": "vue-admin-better-template",
   "version": "1.0.0",
   "private": true,
-  "author": "vue-admin-beautiful",
+  "author": "vue-admin-better",
   "participants": [],
-  "homepage": "https://chu1204505056.gitee.io/vue-admin-beautiful",
+  "homepage": "https://chu1204505056.gitee.io/vue-admin-better",
   "scripts": {
     "serve": "vue-cli-service serve",
     "serve:node18": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",

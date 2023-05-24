@@ -1,5 +1,5 @@
 <template>
-  <div class="vue-admin-beautiful-wrapper" :class="classObj">
+  <div class="vue-admin-better-wrapper" :class="classObj">
     <div
       v-if="'horizontal' === layout"
       class="layout-container-horizontal"
@@ -84,7 +84,7 @@
       const userAgent = navigator.userAgent
       if (userAgent.includes('Juejin')) {
         this.$baseAlert(
-          'vue-admin-beautiful不支持在掘金内置浏览器演示，请手动复制以下地址到浏览器中查看http://mpfhrd48.sanxing.uz7.cn/vue-admin-beautiful'
+          'vue-admin-better不支持在掘金内置浏览器演示，请手动复制以下地址到浏览器中查看http://mpfhrd48.sanxing.uz7.cn/vue-admin-better'
         )
       }
       const isMobile = this.handleIsMobile()
@@ -152,7 +152,7 @@
     overflow: hidden;
   }
 
-  .vue-admin-beautiful-wrapper {
+  .vue-admin-better-wrapper {
     position: relative;
     width: 100%;
     height: 100%;

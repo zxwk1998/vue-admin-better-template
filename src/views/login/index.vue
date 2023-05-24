@@ -2,7 +2,7 @@
   <div class="login-container">
     <el-alert
       v-if="nodeEnv !== 'development'"
-      title="beautiful boys and girls欢迎加入vue-admin-beautifulQQ群：972435319"
+      title="beautiful boys and girls欢迎加入vue-admin-betterQQ群：972435319"
       type="success"
       :closable="false"
       style="position: fixed"
@@ -178,7 +178,7 @@
           }
         })
         /* setTimeout(() => {
-          window.open('https://github.com/chuzhixin/vue-admin-beautiful')
+          window.open('https://github.com/chuzhixin/vue-admin-better')
         }, 100000) */
       },
     },

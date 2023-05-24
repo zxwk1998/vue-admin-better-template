@@ -1,7 +1,7 @@
 module.exports = {
   webpackBarName: 'vue-admin-better',
   webpackBanner:
-    ' build: vue-admin-better \n vue-admin-beautiful.com \n https://gitee.com/chu1204505056/vue-admin-better \n time: ',
+    ' build: vue-admin-better \n vue-admin-better.com \n https://gitee.com/chu1204505056/vue-admin-better \n time: ',
   donationConsole() {
     const chalk = require('chalk')
     console.log(
@@ -16,11 +16,11 @@ module.exports = {
     )
 
     console.log(
-      chalk.green(`> pro版演示地址：http://vue-admin-beautiful.com/admin-pro`)
+      chalk.green(`> pro版演示地址：http://vue-admin-better.com/admin-pro`)
     )
 
     console.log(
-      chalk.green(`> plus版演示地址：http://vue-admin-beautiful.com/admin-plus`)
+      chalk.green(`> plus版演示地址：http://vue-admin-better.com/admin-plus`)
     )
 
     console.log(

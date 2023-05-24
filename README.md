@@ -1,15 +1,15 @@
 简体中文 | [English](./README.en.md)
 
 <div align="center"><img width="200" src="https://gitee.com/chu1204505056/image/raw/master/logo/vab.svg"/>
-<h1> vue-admin-beautiful-pro（element-ui） </h1>
+<h1> vue-admin-better-pro（element-ui） </h1>
 <p>漫天的飞雪，是飞舞的音符，用祝福奏出期盼，愿疫情早日消散，愿明年的你不再有遗憾，愿你三冬暖，愿你春不寒，愿你天黑有灯，下雨有伞。
 </p>
 </div>
 
-[![Website](<https://img.shields.io/badge/ good luck - vue admin beautiful -blue?style=flat-square>)](https://vue-admin-beautiful.com)
-[![stars](https://img.shields.io/github/stars/chuzhixin/vue-admin-beautiful?style=flat-square&logo=GitHub)](https://github.com/chuzhixin/vue-admin-beautiful)
-[![star](https://gitee.com/chu1204505056/vue-admin-beautiful/badge/star.svg?theme=gray)](https://gitee.com/chu1204505056/vue-admin-beautiful)
-[![license](https://img.shields.io/github/license/chuzhixin/vue-admin-beautiful?style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
+[![Website](<https://img.shields.io/badge/ good luck - vue admin beautiful -blue?style=flat-square>)](https://vue-admin-better.com)
+[![stars](https://img.shields.io/github/stars/chuzhixin/vue-admin-better?style=flat-square&logo=GitHub)](https://github.com/chuzhixin/vue-admin-better)
+[![star](https://gitee.com/chu1204505056/vue-admin-better/badge/star.svg?theme=gray)](https://gitee.com/chu1204505056/vue-admin-better)
+[![license](https://img.shields.io/github/license/chuzhixin/vue-admin-better?style=flat-square)](https://en.wikipedia.org/wiki/MIT_License)
 
 # 🎉 特性
 
@@ -23,21 +23,21 @@
 
 ## 🌐 地址
 
-- [🎉 vue2.x + element-ui（免费商用，支持 PC、平板、手机）](http://vue-admin-beautiful.com/vue-admin-beautiful-element/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [🎉 vue2.x + element-ui（免费商用，支持 PC、平板、手机）](http://vue-admin-better.com/vue-admin-better-element/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [⚡️ vue3.x + element-plus（alpha 版本，免费商用，支持 PC、平板、手机）](http://vue-admin-beautiful.com/vue-admin-beautiful-element-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [⚡️ vue3.x + element-plus（alpha 版本，免费商用，支持 PC、平板、手机）](http://vue-admin-better.com/vue-admin-better-element-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [⚡️ vue3.x + ant-design-vue（beta 版本，免费商用，支持 PC、平板、手机）](http://vue-admin-beautiful.com/vue-admin-beautiful-antdv/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [⚡️ vue3.x + ant-design-vue（beta 版本，免费商用，支持 PC、平板、手机）](http://vue-admin-better.com/vue-admin-better-antdv/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [🚀 admin pro 演示地址（付费版本，支持 PC、平板、手机）](http://vue-admin-beautiful.com/admin-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [🚀 admin pro 演示地址（付费版本，支持 PC、平板、手机）](http://vue-admin-better.com/admin-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [🚀 admin plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](http://vue-admin-beautiful.com/admin-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
+- [🚀 admin plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](http://vue-admin-better.com/admin-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-- [📌 pro 及 plus 购买地址 authorization](http://vue-admin-beautiful.com/authorization/)
+- [📌 pro 及 plus 购买地址 authorization](http://vue-admin-better.com/authorization/)
 
-- [🌐 github 仓库地址](https://github.com/chuzhixin/vue-admin-beautiful?utm_source=gold_browser_extension)
+- [🌐 github 仓库地址](https://github.com/chuzhixin/vue-admin-better?utm_source=gold_browser_extension)
 
-- [🌐 码云仓库地址](https://gitee.com/chu1204505056/vue-admin-beautiful?_from=gitee_search)
+- [🌐 码云仓库地址](https://gitee.com/chu1204505056/vue-admin-better?_from=gitee_search)
 
 - 近期 vab 官网频繁遭到 ddos 攻击，我们已采取相关防范措施，如网站无法访问请访问备份地址
 
@@ -47,22 +47,22 @@
 
 - [🚀 admin plus 演示地址（vue3.x 付费版本，支持 PC、平板、手机）](https://chu1204505056.gitee.io/admin-plus/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-## 🌱 vue3.x vue3.0-antdv 分支（ant-design-vue）[点击切换分支](https://github.com/chuzhixin/vue-admin-beautiful-pro/tree/vue3.0-antdv)
+## 🌱 vue3.x vue3.0-antdv 分支（ant-design-vue）[点击切换分支](https://github.com/chuzhixin/vue-admin-better-pro/tree/vue3.0-antdv)
 
 ```bash
 # 克隆项目
-git clone -b vue3.0-antdv https://github.com/chuzhixin/vue-admin-beautiful.git
+git clone -b vue3.0-antdv https://github.com/chuzhixin/vue-admin-better.git
 # 安装依赖
 npm i
 # 本地开发 启动项目
 npm run serve
 ```
 
-## 🌱vue2.x master 分支（element-ui）[点击切换分支](https://github.com/chuzhixin/vue-admin-beautiful-pro/tree/master)
+## 🌱vue2.x master 分支（element-ui）[点击切换分支](https://github.com/chuzhixin/vue-admin-better-pro/tree/master)
 
 ```bash
 # 克隆项目
-git clone -b master https://github.com/chuzhixin/vue-admin-beautiful.git
+git clone -b master https://github.com/chuzhixin/vue-admin-better.git
 # 安装依赖
 npm i
 # 本地开发 启动项目
@@ -211,4 +211,4 @@ npm run serve
 
 <!-- ## 严正声明
 
-近期发现不少游手好闲之人有组织有预谋的利用码云、知乎、掘金等网站可用国外非法网站提供的匿名手机号注册的账号 bug 冒充 vab 去攻击 vue-element-admin，iview-admin，若依，d2-admin，ant-design-vue 的行为，恶意制造对立，试图让其他开源作者卷入其中，对各位开源作者造成的影响我们深表歉意，我们欢迎 vab 的用户去体验其他更优秀的框架，vue-admin-beautiful 走到今天实属不易，被人冒充，被人发帖诋毁，被人故意发布错误言论假装发帖表扬实则为我们招骂，无意动任何人的奶酪，从 2020 年至今坚持全职维护已过一年时间，说实在的我们靠技术生存并不丢人吧，一年来感谢 vab 的用户对我们不离不弃，也希望大家越来越好，加油！ -->
+近期发现不少游手好闲之人有组织有预谋的利用码云、知乎、掘金等网站可用国外非法网站提供的匿名手机号注册的账号 bug 冒充 vab 去攻击 vue-element-admin，iview-admin，若依，d2-admin，ant-design-vue 的行为，恶意制造对立，试图让其他开源作者卷入其中，对各位开源作者造成的影响我们深表歉意，我们欢迎 vab 的用户去体验其他更优秀的框架，vue-admin-better 走到今天实属不易，被人冒充，被人发帖诋毁，被人故意发布错误言论假装发帖表扬实则为我们招骂，无意动任何人的奶酪，从 2020 年至今坚持全职维护已过一年时间，说实在的我们靠技术生存并不丢人吧，一年来感谢 vab 的用户对我们不离不弃，也希望大家越来越好，加油！ -->

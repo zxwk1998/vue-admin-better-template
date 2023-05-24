@@ -19,7 +19,7 @@
                 开源地址
                 <a
                   target="_blank"
-                  href="https://github.com/chuzhixin/vue-admin-beautiful"
+                  href="https://github.com/chuzhixin/vue-admin-better"
                 >
                   如果有幸帮到了你，麻烦给个star
                 </a>
