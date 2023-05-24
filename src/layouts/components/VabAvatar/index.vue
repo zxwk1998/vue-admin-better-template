@@ -14,6 +14,9 @@
       <el-dropdown-item command="gitee" divided>码云地址</el-dropdown-item>
       <el-dropdown-item command="pro" divided>pro付费版地址</el-dropdown-item>
       <el-dropdown-item command="plus" divided>plus付费版地址</el-dropdown-item>
+      <el-dropdown-item command="shop" divided>
+        shop-vite付费版地址
+      </el-dropdown-item>
       <el-dropdown-item command="logout" divided>退出登录</el-dropdown-item>
     </el-dropdown-menu>
   </el-dropdown>
@@ -54,6 +57,10 @@
           case 'plus':
             window.open(
               'https://chu1204505056.gitee.io/admin-plus/?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci='
+            )
+          case 'shop':
+            window.open(
+              'https://chu1204505056.gitee.io/shop-vite/?hmsr=homeAd&hmpl=&hmcu=&hmkw=&hmci='
             )
         }
       },
